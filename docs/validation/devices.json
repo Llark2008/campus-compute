@@ -1,0 +1,27 @@
+{
+  "recordedAt": "2026-09-12T01:22:01.231Z",
+  "devices": [
+    {
+      "id": "local-mac",
+      "verified": true,
+      "platform": "darwin",
+      "release": "24.6.0",
+      "arch": "arm64",
+      "cpu": "Apple M1 Pro",
+      "logicalCpus": 8,
+      "totalMemoryBytes": 17179869184,
+      "freeMemoryBytesAtEnd": 239271936,
+      "backend": "metal",
+      "inferenceKey": "2471268eab177e5e561aec99d56f117a3481f09d720af7c687f6f2fa0a65a4c9",
+      "probe": "probe-local-mac.json",
+      "evaluation": "real-evaluation-local-mac.json",
+      "lifecycle": "lifecycle-local-mac.json"
+    }
+  ],
+  "pending": [
+    "Windows CPU or CUDA native20-task probe",
+    "8GB Mac10-minute owner experience",
+    "Additional physical Macs and event network",
+    "Controlled real-pool benchmark"
+  ]
+}

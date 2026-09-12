@@ -1,0 +1,12 @@
+{
+  "coordinatorUrl": "http://172.26.16.11:3000",
+  "joinCode": "REPLACE_WITH_GROUP_JOIN_CODE",
+  "name": "teammate-windows-cuda",
+  "backend": "cuda",
+  "engineBin": "C:/CampusCompute/engine-cuda/llama-server.exe",
+  "enginePrefix": [],
+  "modelPath": "C:/CampusCompute/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "enginePort": 8081,
+  "stateDir": "C:/CampusCompute/worker",
+  "controlPort": 3001
+}

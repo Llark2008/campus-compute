@@ -1,0 +1,33 @@
+{
+  "experimentId": "966ff90b-b149-40d3-a30e-1477f753839f",
+  "nativeWorkerOnly": true,
+  "inferenceDispatched": false,
+  "stableIdentityAcrossRejoin": true,
+  "observedKinds": [
+    "canceled",
+    "created",
+    "left",
+    "level_changed",
+    "recording_ended",
+    "recording_started",
+    "registered",
+    "state_changed",
+    "task_canceled"
+  ],
+  "events": 11,
+  "frames": 6,
+  "zeroContributionSessions": 4,
+  "finalProgress": {
+    "planned": 2,
+    "fresh": 0,
+    "cached": 0,
+    "queued": 0,
+    "leased": 0,
+    "failed": 0,
+    "canceled": 2,
+    "retries": 0
+  },
+  "restoredWorkerState": "ready",
+  "restoredLevel": "high",
+  "traceFile": "output/recordings/campus-compute-replay-966ff90b-b149-40d3-a30e-1477f753839f.json"
+}

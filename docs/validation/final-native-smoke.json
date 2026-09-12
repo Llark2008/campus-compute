@@ -1,0 +1,22 @@
+{
+  "recordedAt": "2026-09-12T01:31:50.909Z",
+  "passed": true,
+  "device": "16GB Apple M1 Pro / Metal",
+  "nativeContextLimit": {
+    "experimentId": "321a1bb5-356a-4ea1-a7f1-14c7998be72b",
+    "failed": 1,
+    "error": "INPUT_TOO_LONG: 题目加输出预算超过上下文"
+  },
+  "freshEvaluation": {
+    "experimentId": "a962fa43-b0df-42ff-88a2-d6af37def871",
+    "fresh": 20,
+    "failed": 0
+  },
+  "exit": {
+    "exitMs": 58.937082999997074,
+    "enginePid": 13558,
+    "processAlive": false,
+    "state": "stopped"
+  },
+  "note": "Executed after client protocol correction and runtime move to persistent Application Support"
+}

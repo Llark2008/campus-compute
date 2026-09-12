@@ -1,0 +1,60 @@
+[
+  {
+    "id": "Mercury_SC_415702",
+    "question": "George wants to warm his hands quickly by rubbing them. Which skin surface will produce the most heat?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "dry palms"
+      },
+      {
+        "label": "B",
+        "text": "wet palms"
+      },
+      {
+        "label": "C",
+        "text": "palms covered with oil"
+      },
+      {
+        "label": "D",
+        "text": "palms covered with lotion"
+      }
+    ],
+    "answerKey": "A",
+    "originalLabels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  },
+  {
+    "id": "MCAS_2009_5_6516",
+    "question": "Which of the following statements best explains why magnets usually stick to a refrigerator door?",
+    "choices": [
+      {
+        "label": "A",
+        "text": "The refrigerator door is smooth."
+      },
+      {
+        "label": "B",
+        "text": "The refrigerator door contains iron."
+      },
+      {
+        "label": "C",
+        "text": "The refrigerator door is a good conductor."
+      },
+      {
+        "label": "D",
+        "text": "The refrigerator door has electric wires in it."
+      }
+    ],
+    "answerKey": "B",
+    "originalLabels": [
+      "A",
+      "B",
+      "C",
+      "D"
+    ]
+  }
+]

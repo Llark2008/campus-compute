@@ -1,0 +1,10 @@
+{
+  "recordedAt": "2026-09-12T01:27:47.719Z",
+  "passed": true,
+  "experimentId": "87fab42f-96cc-4cdc-99b3-560564030ded",
+  "state": "completed",
+  "fresh": 600,
+  "cached": 0,
+  "failed": 0,
+  "note": "Actual coordinator restart and runtime-directory relocation preserved the600-task evaluation"
+}

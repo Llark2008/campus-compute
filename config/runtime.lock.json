@@ -1,0 +1,27 @@
+{
+  "adapterVersion": "llama-completion-v1",
+  "modelRepo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+  "modelRevision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+  "modelFile": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "modelSha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+  "engineVersion": "b10917-8ea290247",
+  "chatTemplateSha256": "4e9918361c284a93880606d182d64da6a9fe97cdc1f5c5a78c1c8840444246fc",
+  "generation": {
+    "contextSize": 2048,
+    "maxTokens": 128,
+    "temperature": 0,
+    "seed": 42,
+    "cachePrompt": false
+  },
+  "inferenceKey": "2471268eab177e5e561aec99d56f117a3481f09d720af7c687f6f2fa0a65a4c9",
+  "artifacts": [
+    {
+      "platform": "darwin",
+      "arch": "arm64",
+      "backend": "metal",
+      "binarySha256": "d707b6db4c1397a7383176fba12d339e5b33c7513669d74c8fbc2a76f6979a72",
+      "executable": "llama-server",
+      "prefix": []
+    }
+  ]
+}

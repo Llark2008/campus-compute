@@ -1,0 +1,27 @@
+{
+  "experimentId": "e70b6cea-9d88-4d59-928d-332842662de9",
+  "state": "completed",
+  "planned": 600,
+  "fresh": 600,
+  "cached": 0,
+  "elapsedMs": 450019,
+  "executionElapsedMs": 449871,
+  "workloadFingerprint": "78deefe9a9bf540c3d8330239cd8c7341bb5a884d6f44ae087c773dabb735550",
+  "contributingDevices": [
+    {
+      "name": "local-mac",
+      "completed": 11,
+      "state": "stopped"
+    },
+    {
+      "name": "optional",
+      "completed": 167,
+      "state": "ready"
+    },
+    {
+      "name": "cindy-mac",
+      "completed": 422,
+      "state": "offline"
+    }
+  ]
+}

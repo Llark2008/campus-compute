@@ -1,0 +1,11 @@
+{
+  "modelRepo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+  "modelRevision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+  "name": "teammate-mac",
+  "backend": "metal",
+  "engineBin": "/Users/YOUR_USERNAME/Library/Application Support/CampusCompute/engine/llama-b10917/llama-server",
+  "enginePrefix": [],
+  "modelPath": "/Users/YOUR_USERNAME/Library/Application Support/CampusCompute/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "enginePort": 8081,
+  "stateDir": "/Users/YOUR_USERNAME/Library/Application Support/CampusCompute/worker"
+}

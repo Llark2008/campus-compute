@@ -1,0 +1,220 @@
+{
+  "status": "passed",
+  "device": "local-mac",
+  "startedAt": "2026-09-12T01:05:36.365Z",
+  "finishedAt": "2026-09-12T01:05:42.997Z",
+  "system": {
+    "platform": "darwin",
+    "release": "24.6.0",
+    "arch": "arm64",
+    "cpu": "Apple M1 Pro",
+    "logicalCpus": 8,
+    "totalMemoryBytes": 17179869184,
+    "freeMemoryBytesAtEnd": 239271936
+  },
+  "runtime": {
+    "adapterVersion": "llama-completion-v1",
+    "modelRepo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+    "modelRevision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+    "modelFile": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "modelSha256": "6a1a2eb6d15622bf3c96857206351ba97e1af16c30d7a74ee38970e434e9407e",
+    "engineVersion": "b10917-8ea290247",
+    "chatTemplateSha256": "4e9918361c284a93880606d182d64da6a9fe97cdc1f5c5a78c1c8840444246fc",
+    "generation": {
+      "contextSize": 2048,
+      "maxTokens": 128,
+      "temperature": 0,
+      "seed": 42,
+      "cachePrompt": false
+    },
+    "inferenceKey": "2471268eab177e5e561aec99d56f117a3481f09d720af7c687f6f2fa0a65a4c9",
+    "artifacts": [
+      {
+        "platform": "darwin",
+        "arch": "arm64",
+        "backend": "metal",
+        "binarySha256": "d707b6db4c1397a7383176fba12d339e5b33c7513669d74c8fbc2a76f6979a72",
+        "executable": "llama-server",
+        "prefix": []
+      }
+    ]
+  },
+  "paths": {
+    "modelFile": "qwen2.5-1.5b-instruct-q4_k_m.gguf",
+    "engineExecutable": "llama-server"
+  },
+  "measurements": {
+    "hashingMs": 905.3955,
+    "coldStartMs": 856.0113749999998,
+    "backendEvidence": [
+      "0.00.656.248 I load_tensors: offloading output layer to GPU",
+      "0.00.656.251 I load_tensors: offloading 27 repeating layers to GPU",
+      "0.00.656.251 I load_tensors: offloaded 29/29 layers to GPU",
+      "0.00.658.749 I ggml_metal_init: allocating",
+      "0.00.658.793 I ggml_metal_init: found device: Apple M1 Pro",
+      "0.00.658.799 I ggml_metal_init: picking default device: Apple M1 Pro"
+    ]
+  },
+  "results": [
+    {
+      "sampleId": "MCAS_2012_5_23632",
+      "text": "C. River sediments were slowly compacted and cemented together.",
+      "finishReason": "stop",
+      "inputTokens": 125,
+      "outputTokens": 15,
+      "inferenceMs": 309.26479100000006
+    },
+    {
+      "sampleId": "MCAS_2006_5_29",
+      "text": "D. a bar graph showing how much each rod bent.",
+      "finishReason": "stop",
+      "inputTokens": 121,
+      "outputTokens": 13,
+      "inferenceMs": 288.622875
+    },
+    {
+      "sampleId": "Mercury_400934",
+      "text": "C. He, Ne, Ar",
+      "finishReason": "stop",
+      "inputTokens": 87,
+      "outputTokens": 8,
+      "inferenceMs": 204.19887500000004
+    },
+    {
+      "sampleId": "TIMSS_2003_8_pg29",
+      "text": "B. kidney",
+      "finishReason": "stop",
+      "inputTokens": 69,
+      "outputTokens": 4,
+      "inferenceMs": 142.1997919999999
+    },
+    {
+      "sampleId": "NYSEDREGENTS_2014_4_20",
+      "text": "D. support",
+      "finishReason": "stop",
+      "inputTokens": 65,
+      "outputTokens": 4,
+      "inferenceMs": 142.4459579999998
+    },
+    {
+      "sampleId": "Mercury_7220378",
+      "text": "C. by changing temperature conditions that single-celled producers require",
+      "finishReason": "stop",
+      "inputTokens": 121,
+      "outputTokens": 13,
+      "inferenceMs": 286.44841700000006
+    },
+    {
+      "sampleId": "Mercury_7189035",
+      "text": "C. 50% red flowers",
+      "finishReason": "stop",
+      "inputTokens": 102,
+      "outputTokens": 9,
+      "inferenceMs": 235.31479100000024
+    },
+    {
+      "sampleId": "Mercury_7026198",
+      "text": "A. an element in the same group",
+      "finishReason": "stop",
+      "inputTokens": 112,
+      "outputTokens": 9,
+      "inferenceMs": 342.42300000000023
+    },
+    {
+      "sampleId": "Mercury_SC_407169",
+      "text": "D. They would be unable to survive.",
+      "finishReason": "stop",
+      "inputTokens": 107,
+      "outputTokens": 10,
+      "inferenceMs": 248.0067909999998
+    },
+    {
+      "sampleId": "Mercury_7057313",
+      "text": "A. the same kind of cells working together.",
+      "finishReason": "stop",
+      "inputTokens": 81,
+      "outputTokens": 11,
+      "inferenceMs": 233.65920800000004
+    },
+    {
+      "sampleId": "Mercury_7090598",
+      "text": "A. erosion",
+      "finishReason": "stop",
+      "inputTokens": 71,
+      "outputTokens": 4,
+      "inferenceMs": 142.5888329999998
+    },
+    {
+      "sampleId": "Mercury_7192990",
+      "text": "D. an increase in the production of oxygen",
+      "finishReason": "stop",
+      "inputTokens": 113,
+      "outputTokens": 10,
+      "inferenceMs": 250.77508399999988
+    },
+    {
+      "sampleId": "MCAS_2006_9_31-v1",
+      "text": "C. The cart's mechanical energy is all potential.",
+      "finishReason": "stop",
+      "inputTokens": 104,
+      "outputTokens": 12,
+      "inferenceMs": 272.4244579999995
+    },
+    {
+      "sampleId": "Mercury_SC_405487",
+      "text": "B. Food sources increased.",
+      "finishReason": "stop",
+      "inputTokens": 110,
+      "outputTokens": 7,
+      "inferenceMs": 210.34041700000034
+    },
+    {
+      "sampleId": "Mercury_SC_407695",
+      "text": "B. Change the height of the ramp.",
+      "finishReason": "stop",
+      "inputTokens": 107,
+      "outputTokens": 10,
+      "inferenceMs": 252.40570799999932
+    },
+    {
+      "sampleId": "Mercury_7171938",
+      "text": "A. full and first quarter",
+      "finishReason": "stop",
+      "inputTokens": 92,
+      "outputTokens": 7,
+      "inferenceMs": 190.11395800000082
+    },
+    {
+      "sampleId": "Mercury_7248238",
+      "text": "D. Speciation due to reproductive isolation influenced the breeding preferences.",
+      "finishReason": "stop",
+      "inputTokens": 163,
+      "outputTokens": 14,
+      "inferenceMs": 374.80183299999953
+    },
+    {
+      "sampleId": "Mercury_SC_400172",
+      "text": "A.",
+      "finishReason": "stop",
+      "inputTokens": 67,
+      "outputTokens": 3,
+      "inferenceMs": 131.82579200000055
+    },
+    {
+      "sampleId": "NYSEDREGENTS_2014_4_13",
+      "text": "B. reflectiveness",
+      "finishReason": "stop",
+      "inputTokens": 78,
+      "outputTokens": 5,
+      "inferenceMs": 158.5768339999995
+    },
+    {
+      "sampleId": "Mercury_192290",
+      "text": "D. their method of catching food",
+      "finishReason": "stop",
+      "inputTokens": 91,
+      "outputTokens": 8,
+      "inferenceMs": 219.71962499999972
+    }
+  ]
+}

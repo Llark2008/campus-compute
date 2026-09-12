@@ -1,0 +1,15 @@
+node_modules/
+dist/
+output/
+.env
+.env.*
+!.env.example
+.runtime/
+*.gguf
+*.sqlite*
+*.log
+config/local*.json
+device-id.json
+worker.lock
+.DS_Store
+.playwright-cli/

@@ -1,0 +1,16 @@
+{
+  "recordedAt": "2026-09-12T01:33:57Z",
+  "testFiles": 18,
+  "testsPassed": 83,
+  "testsFailed": 0,
+  "testRunner": "Vitest3.2.7 / Node24.21.0",
+  "typecheck": {
+    "command": "tsc --noEmit",
+    "exitCode": 0
+  },
+  "productionBuild": {
+    "command": "vite build",
+    "exitCode": 0
+  },
+  "scope": "Automated protocol and integration checks; actual hardware evidence is recorded separately"
+}

@@ -1,0 +1,11 @@
+{
+  "modelRepo": "Qwen/Qwen2.5-1.5B-Instruct-GGUF",
+  "modelRevision": "91cad51170dc346986eccefdc2dd33a9da36ead9",
+  "name": "teammate-windows-cuda",
+  "backend": "cuda",
+  "engineBin": "C:/CampusCompute/engine-cuda/llama-server.exe",
+  "enginePrefix": [],
+  "modelPath": "C:/CampusCompute/models/qwen2.5-1.5b-instruct-q4_k_m.gguf",
+  "enginePort": 8081,
+  "stateDir": "C:/CampusCompute/worker"
+}

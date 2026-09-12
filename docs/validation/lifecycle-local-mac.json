@@ -1,0 +1,183 @@
+{
+  "recordedAt": "2026-09-12T01:17:42.256Z",
+  "device": "Apple M1 Pro / 16GB / Metal",
+  "scope": "Real single-device functional validation, not a pool benchmark",
+  "checks": [
+    {
+      "name": "cache reuse",
+      "passed": true,
+      "experimentId": "bea95028-35cb-4483-9677-4c6b5d6bca69",
+      "preview": {
+        "total": 600,
+        "cached": 600,
+        "fresh": 0
+      },
+      "cached": 600,
+      "fresh": 0,
+      "credits": 0
+    },
+    {
+      "name": "low contribution level",
+      "passed": true,
+      "experimentId": "8b7d23f3-4e77-4f93-a76d-d82439a86930",
+      "computed": 10,
+      "gaps": [
+        {
+          "inferenceMs": 292.7021250000689,
+          "afterAcknowledgementMs": 595
+        },
+        {
+          "inferenceMs": 318.6773750000866,
+          "afterAcknowledgementMs": 641
+        },
+        {
+          "inferenceMs": 326.27370899997186,
+          "afterAcknowledgementMs": 658
+        },
+        {
+          "inferenceMs": 303.24391700001433,
+          "afterAcknowledgementMs": 613
+        },
+        {
+          "inferenceMs": 255.40320800000336,
+          "afterAcknowledgementMs": 515
+        },
+        {
+          "inferenceMs": 289.23166599997785,
+          "afterAcknowledgementMs": 586
+        },
+        {
+          "inferenceMs": 290.9545410000719,
+          "afterAcknowledgementMs": 588
+        },
+        {
+          "inferenceMs": 288.7412920000497,
+          "afterAcknowledgementMs": 595
+        },
+        {
+          "inferenceMs": 286.68512500007637,
+          "afterAcknowledgementMs": 584
+        }
+      ]
+    },
+    {
+      "name": "medium contribution level",
+      "passed": true,
+      "experimentId": "ff3cb8fe-9306-4486-b8be-21306481c471",
+      "computed": 10,
+      "gaps": [
+        {
+          "inferenceMs": 287.20529199996963,
+          "afterAcknowledgementMs": 296
+        },
+        {
+          "inferenceMs": 287.6600000000326,
+          "afterAcknowledgementMs": 297
+        },
+        {
+          "inferenceMs": 268.6968750000233,
+          "afterAcknowledgementMs": 289
+        },
+        {
+          "inferenceMs": 277.71991699992213,
+          "afterAcknowledgementMs": 289
+        },
+        {
+          "inferenceMs": 249.33383400004823,
+          "afterAcknowledgementMs": 252
+        },
+        {
+          "inferenceMs": 292.01233399997,
+          "afterAcknowledgementMs": 296
+        },
+        {
+          "inferenceMs": 287.2251249999972,
+          "afterAcknowledgementMs": 290
+        },
+        {
+          "inferenceMs": 319.45229199994355,
+          "afterAcknowledgementMs": 331
+        },
+        {
+          "inferenceMs": 296.7328330000164,
+          "afterAcknowledgementMs": 308
+        }
+      ]
+    },
+    {
+      "name": "high contribution level",
+      "passed": true,
+      "experimentId": "e0ec6f0e-0d3f-4531-a4e8-236c16e94a59",
+      "computed": 10,
+      "gaps": [
+        {
+          "inferenceMs": 287.20283299998846,
+          "afterAcknowledgementMs": 3
+        },
+        {
+          "inferenceMs": 286.9447919999948,
+          "afterAcknowledgementMs": 3
+        },
+        {
+          "inferenceMs": 261.2706669999752,
+          "afterAcknowledgementMs": 3
+        },
+        {
+          "inferenceMs": 260.83325000002515,
+          "afterAcknowledgementMs": 2
+        },
+        {
+          "inferenceMs": 230.03462499997113,
+          "afterAcknowledgementMs": 1
+        },
+        {
+          "inferenceMs": 280.86383299995214,
+          "afterAcknowledgementMs": 2
+        },
+        {
+          "inferenceMs": 280.8032499999972,
+          "afterAcknowledgementMs": 2
+        },
+        {
+          "inferenceMs": 282.03229200001806,
+          "afterAcknowledgementMs": 2
+        },
+        {
+          "inferenceMs": 281.1201249998994,
+          "afterAcknowledgementMs": 2
+        }
+      ]
+    },
+    {
+      "name": "pause finishes current task and retains engine",
+      "passed": true,
+      "enginePid": 10784,
+      "completedAtPause": 631,
+      "observedNoNewTaskMs": 2100
+    },
+    {
+      "name": "resume reuses loaded engine",
+      "passed": true,
+      "enginePid": 10784
+    },
+    {
+      "name": "exit stops owned process and releases active task",
+      "passed": true,
+      "exitMs": 825.6037910000014,
+      "enginePid": 10784,
+      "processAlive": false,
+      "taskId": "53c0c05a-f0eb-467e-82a6-3bef934e4d19",
+      "taskState": "queued",
+      "faultRetries": 0,
+      "targetUnder2Seconds": true
+    },
+    {
+      "name": "restart recovers released work",
+      "passed": true,
+      "experimentId": "21a867f3-69c0-44b4-98a8-040714214142",
+      "computed": 40,
+      "credits": 40,
+      "attemptCount": 41
+    }
+  ]
+}
