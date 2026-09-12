@@ -1,5 +1,7 @@
 # Acceptance record — 2026-09-11 (America/New_York)
 
+> Historical single-device validation: this document describes the earlier 200-question / 600-task run. The final internal test used **1,000 questions × 3 prompts = 3,000 tasks**; see [current replay verification](replay-showcase.md) and [source recording](../../data/showcase/join-and-out.json).
+
 The application is implemented and locally exercised. Physical cross-platform/pool acceptance is **not complete**. This record distinguishes automated protocol checks, real native execution, and checks requiring other hardware.
 
 Final automated checks: **83/83 tests passed**, with TypeScript checking and production build passing.

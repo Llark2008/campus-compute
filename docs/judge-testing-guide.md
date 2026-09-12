@@ -1,12 +1,14 @@
 # 给评委的测试与三分钟展示
 
-本轮功能：保留原200道 ARC-Challenge validation题，新增完整1,172道test题；页面可选20/200/500/1000/全部或填写整数。题量是“问题数”，实际推理任务数为问题数×提示词数。完整新题库搭配3个提示词是3,516项任务。自定义JSONL上限2,000题、2MB。
+**最终内部测试与网页回放：1,000个不同问题 × 每题3种提示词 = 3,000个推理任务，全部完成，缓存0、失败0。** 现场可用[真实回放展示](replay-showcase.md)，默认24×约22秒。
+
+题库容量：保留原200道 ARC-Challenge validation题，新增完整1,172道test题；页面可选20/200/500/1000/全部或填写整数。题量是“问题数”，实际推理任务数为问题数×提示词数。完整新题库搭配3个提示词是3,516项任务。自定义JSONL上限2,000题、2MB。
 
 ## 先做有说服力的比较
 
 需求场景是团队反复修改提示词后，需要对固定题库进行完整回归评测。每次真实修改会产生新的推理工作；多台闲置电脑并行处理独立题目，目标是缩短一轮评测的等待时间。不要只展示一个题目回答得很快，也不要把模型准确率的变化解释成多机加速带来的效果。
 
-建议用 **新test题库中的同一500题×相同3提示词=1,500项任务**，先试20题检查连接，再跑正式测试。如果500题耗时超出你们准备时间，可统一降为200题；所有比较组必须一起改。全量1,172题适合提前长跑，没必要在3分钟内等它算完。
+后续正式速度对照统一使用 **新test题库中的同一1,000题 × 相同3提示词 = 3,000项任务**，与最终内部测试的题量一致；先试20题检查连接，再跑正式测试。所有比较组必须使用相同题目、提示词和模型。全量1,172题适合提前长跑，没必要在3分钟内等它算完。
 
 | 测试 | 设备和设置 | 留下的证据 |
 | --- | --- | --- |
@@ -35,7 +37,7 @@
 
 1. 使用至少两台已经Start并完成热身的真实设备，所有待测设备保持Ready。建议单独的协调数据库，或先确保当前协调端没有其他排队任务。
 2. 以组加入码认证读取`GET /api/workers`。这列出当前连接的设备，与评测页只展示已贡献设备的列表分开。记录它们的id；重新启动贡献会产生新会话时需要更新配置。
-3. 同样认证读取`GET /api/datasets`和`GET /api/defaults`。选择新test题库，截取其sampleIds前500个，并原样使用defaults.variants。可在终端运行`node --import tsx`打开REPL，用下面的片段生成私有配置（先将baselineName改成你们实测最快的设备名）：
+3. 同样认证读取`GET /api/datasets`和`GET /api/defaults`。选择新test题库，截取其sampleIds前1,000个，并原样使用defaults.variants。可在终端运行`node --import tsx`打开REPL，用下面的片段生成私有配置（先将baselineName改成你们实测最快的设备名）：
 
 ```js
 const fs = await import('node:fs/promises');
@@ -57,7 +59,7 @@ if (!dataset) throw new Error('请先更新并重启协调端');
 const defaults = await get('/api/defaults');
 await fs.writeFile('config/local-benchmark.json', JSON.stringify({
   coordinatorUrl,joinCode:server.joinCode,datasetId:dataset.id,
-  sampleIds:dataset.sampleIds.slice(0,500),variants:defaults.variants,
+  sampleIds:dataset.sampleIds.slice(0,1000),variants:defaults.variants,
   singleWorkerId:baseline[0].id,allWorkerIds:workers.map(w => w.id),
   repeats:3,outputDir:'output/benchmarks'
 },null,2),{mode:0o600});
@@ -77,7 +79,7 @@ macOS终端和Windows PowerShell均可使用Node24 REPL和同一个npm命令。�
 
 | 时间 | 屏幕和动作 | 要表达的点 |
 | --- | --- | --- |
-| 0:00–0:25 | 一张真实需求图/发布页：500题×3个提示词 | 学生改提示词后需要反复回归评测，闲置电脑能帮助缩短等待 |
+| 0:00–0:25 | 一张真实需求图/发布页：1,000题×3个提示词=3,000个任务 | 学生改提示词后需要反复回归评测，闲置电脑能帮助缩短等待 |
 | 0:25–1:00 | 提前测好的单机/多机对比表，链接各轮原始报告 | 相同模型、相同题目、关闭缓存；报告实测中位数和倍率 |
 | 1:00–1:40 | 正在运行的独立展示轮：任务持续被多台电脑接受 | 展示真实模型输出、当前评测的贡献设备、任务分配 |
 | 1:40–2:20 | 一台正在计算的设备点击Exit，观察其他节点继续 | 资源属于贡献者，允许退出；任务回收后继续完成。预留租约恢复时间 |

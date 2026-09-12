@@ -2,6 +2,8 @@
 
 Implemented the user-authorized dynamic webpage from the verified join_and_out recording. Served at /showcase.html and packaged as an offline HTML. Source event data is unchanged; timing comes from the saved experiment report.
 
+Final internal test: **1,000 distinct questions × 3 prompt variants = 3,000 inference tasks**. All 3,000 tasks produced fresh accepted results, with 0 cached results and 0 failed tasks. Question count is based on distinct sampleId values; task count is based on unique (sampleId, variantId) pairs.
+
 ## Automated checks
 
 - 130 tests passed across25files, including8new replay model cases. TypeScript noEmit passed; original UI and standalone Vite builds passed.

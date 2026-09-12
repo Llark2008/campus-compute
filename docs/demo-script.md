@@ -1,19 +1,18 @@
 # Three-minute demo
 
-Use preloaded physical devices and a known working network. Refer to actual reports listed in the validation records; do not invent acceleration numbers. The table below is a rehearsal script, not evidence that a rehearsal has occurred.
+The final internal test uses **1,000 distinct ARC-Challenge questions × 3 prompt variants = 3,000 inference tasks**. One task is one question evaluated with one prompt. All 3,000 tasks finished with fresh results; none were served from cache.
+
+Use the real `join_and_out` replay at `http://localhost:3000/showcase.html`, or the offline HTML built by `npm run build:web`. It is explicitly labeled as a recording. Default 24× playback completes in about 22 seconds; 48× takes about 11 seconds and 96× about 6 seconds.
 
 | Time | Screen and narration |
-|---|---|
-| 0:00–0:20 | “Changing one prompt can improve some answers and break others. Student developers need batch regression checks.” Show one question and three prompt versions. |
-| 0:20–0:45 | Publish an ARC evaluation. Explain the independent tasks and fixed shared model. |
-| 0:45–1:15 | Show participating computers and real completed-task counts. “Each computer pulls work at the pace its owner chooses.” |
-| 1:15–1:45 | On one contributor's own local page, click Exit now. Show its process stops and unfinished work is released/reassigned. |
-| 1:45–2:15 | Open a question's raw model responses and quality comparison. State the current common-sample count. |
-| 2:15–2:45 | Open an explicitly labelled previously completed report. If real multi-machine benchmarks exist, show their measured comparison; otherwise omit the speed claim. |
-| 2:45–3:00 | “A campus inference pool with owner control, recoverable work, and useful evaluation reports.” |
+| --- | --- |
+| 0:00–0:20 | Start paused. “Student developers need to evaluate prompt changes repeatedly. This internal test runs 1,000 questions with three prompts each: 3,000 independent inference tasks.” |
+| 0:20–0:45 | Play at 24×. Show two laptops joining, their contribution colors appearing in the progress bar, and one laptop leaving. |
+| 0:45–1:15 | At completion, point to 3,000 accepted tasks and contributions of 1,769 / 638 / 593. “Leaving does not erase completed work.” |
+| 1:15–1:50 | Click Task handed off. The same task moves from optional to cindy-mac: 28 ms from release to claim, 1.016 s from release to accepted result. These are this task's coordinator observations. |
+| 1:50–2:25 | Explain that each device runs the complete small model and takes independent question/prompt tasks. Contributors choose their pace and can pause or exit. |
+| 2:25–3:00 | Return to the completed progress bar. Explain how a shared pool can serve repeated evaluation demand. Report a speedup only if a separate, identical-workload comparison supports it. |
 
-Reserve enough genuinely uncached tasks for the live run. A previous identical normal experiment can be served entirely from cache; if deliberately rerunning computations, label the run as benchmark and explain that it earns no credit.
+Primary evidence: [source recording](../data/showcase/join-and-out.json), experiment `90a8719c-4f0d-41f3-b5df-13046c68faf8`, and [replay verification](validation/replay-showcase.md). [Controls and fast walkthrough](replay-showcase.md) describe seeking, fullscreen and offline playback.
 
-Before the event: two timed rehearsals, a tested backup network, and a clearly labelled recorded demonstration if desired. These physical event steps remain team operations even though development is performed by Codex.
-
-Available local archive: `docs/validation/real-evaluation-local-mac.json`, experiment `87fab42f-96cc-4cdc-99b3-560564030ded`, with600 actual Mac results. Use it only as a clearly labelled completed local run. Its strict scores illustrate format failures: the two-example prompt achieved145/200 correct with200/200 valid answer lines; the other prompts frequently ignored the requested answer-line format. Show raw text to explain this distinction.
+Earlier single-device development used 200 validation questions and 600 tasks. The [historical report](validation/real-evaluation-local-mac.json) remains available for inspecting generated answers; its question count and scores must not be presented as the final 1,000-question internal test.

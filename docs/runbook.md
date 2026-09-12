@@ -110,7 +110,7 @@ sh scripts/start-worker.sh config/local-worker.json
 
 ## 5. 发布与报告
 
-默认200题×3提示词=600次独立生成，可先选20题排查。预览显示需要新计算和可复用量；编辑输入后重新预览。自定义 JSONL 每行示例：
+最终内部测试使用test题库中的 **1,000题 × 3提示词 = 3,000个推理任务**。新建实验时选择test题库并把Questions in this run设为1000；界面初始200题是较小的默认选择，可先选20题排查。预览显示需要新计算和可复用量；编辑输入后重新预览。自定义 JSONL 每行示例：
 
 ```json
 {"id":"liquid-1","question":"Which is liquid?","choices":[{"label":"1","text":"Ice"},{"label":"2","text":"Water"}],"answerKey":"2"}
@@ -158,7 +158,7 @@ npm run server -- --config config/local-server.json
 npm run worker -- --config config/local-worker.json
 ```
 
-协调网页为 `http://127.0.0.1:3000`，本机贡献页为 `http://127.0.0.1:3001`。当前完整评测 ID 为 `87fab42f-96cc-4cdc-99b3-560564030ded`，可在页面顶部按 ID 打开。现有私有配置只适用于本机；队友需要使用自己的路径，并将协调地址换为主机的局域网地址。
+协调网页为 `http://127.0.0.1:3000`，本机贡献页为 `http://127.0.0.1:3001`。最终内部测试 `join_and_out` 的评测 ID 为 `90a8719c-4f0d-41f3-b5df-13046c68faf8`（1,000题、3,000任务），可在页面顶部按 ID 打开。现有私有配置只适用于本机；队友需要使用自己的路径，并将协调地址换为主机的局域网地址。
 
 ## 9. 扩展题库、耗时与对比表
 
